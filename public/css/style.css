@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
  p {
      font-size: 13px;
      line-height: 22px;
-     color:#888;
+     color:#241111;
 }
 img {
      height: auto;
@@ -1362,6 +1362,7 @@ label {
 /* Blog Page */
 .blog .card-body, .sidebar-card .card-body, .reviews-card .card-body {
     padding: 25px;
+    background-color: #027236;
 }
 .blog-header {
     border: 2px solid #fff;

@@ -6,6 +6,8 @@ import http from "../../services/api";
 import { ToastObjects } from "../../utils/toast/toastObject";
 import { useDispatch, useSelector } from "react-redux";
 import homeServices from "../../services/homeServices";
+
+
 function Footer() {
   const dispatch = useDispatch();
   const settings = useSelector((state) => state.home.settings);
@@ -26,18 +28,18 @@ function Footer() {
   return (
     <div>
       {/* Footer */}
-      <section className="section-padding bg-white border-top">
+      <section className="section-padding  border-top" style={{ backgroundColor:'#E2E2DC ',color: 'red' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-sm-6">
               <div className="feature-box">
                 <i className="mdi mdi-truck-fast" />
-                <h6>Free &amp; Next Day Delivery</h6>
+                <h6>Free &amp; 24 hrs Delivery </h6>
                 <p>Get to yours Door step</p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6">
-              <div className="feature-box">
+              <div className="feature-box" >
                 <i className="mdi mdi-basket" />
                 <h6>100% Satisfaction Guarantee</h6>
                 <p>HIGHEST RATING IN POKHARA</p>
@@ -54,10 +56,10 @@ function Footer() {
         </div>
       </section>
 
-      <section className="section-padding footer bg-white border-top">
-        <div className="container">
+      <section className="section-padding footer" style={{ backgroundColor:'#2C2D30', color: '#34e2b5' }}>
+        < div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-3">
+          <div className="col-lg-3 col-md-3">
               <h4 className="mb-5 mt-0">
                 <Link className="logo" to="/">
                   <img
@@ -66,24 +68,11 @@ function Footer() {
                   />
                 </Link>
               </h4>
-              <p className="mb-0">
-                <Link to="#" className="text-dark">
-                  <i className="mdi mdi-phone" /> {settings.phone}
-                </Link>
-              </p>
-              <p className="mb-0">
-                <Link to="#" className="text-dark">
-                  <i className="mdi mdi-gmail" /> {settings.email}
-                </Link>
-              </p>
-              <p className="mb-0">
-                <Link to="#" className="text-dark">
-                  <i className="mdi mdi-map-marker" /> {settings.address}
-                </Link>
-              </p>
-            </div>
+              </div>
+             
+            
             <div className="col-lg-2 col-md-2">
-              <h6 className="mb-4">INFORMATION </h6>
+              <h6 className="text-white">INFORMATION </h6>
               <ul className="footer-list">
                 <li>
                   <a href="#"> Your Account</a>
@@ -104,7 +93,7 @@ function Footer() {
               </ul>
             </div>
             <div className="col-lg-2 col-md-2">
-              <h6 className="mb-4">CATEGORIES</h6>
+              <h6 className="text-white">CATEGORIES</h6>
               <ul className="footer-list">
                 {categories &&
                   categories.length > 0 &&
@@ -114,18 +103,18 @@ function Footer() {
                     </li>
                   ))}
               </ul>
-            </div>
-            <div className="col-lg-2 col-md-2">
-              <h6 className="mb-4">CUSTOMER CARE</h6>
+              </div>
+              <div className="col-lg-2 col-md-2">
+              <h6 className="text-white">GADGET HUB</h6>
               <ul className="footer-list">
                 <li>
-                  <a href="#">Payment Method</a>
+                  <a href="#">About us</a>
                 </li>
                 <li>
-                  <a href="#">Help</a>
+                  <a href="#">contact us</a>
                 </li>
                 <li>
-                  <a href="#">Product Support</a>
+                  <a href="#">Customer service</a>
                 </li>
                 <li>
                   <a href="#">Privacy Policy</a>
@@ -135,56 +124,82 @@ function Footer() {
                 </li>
                 <ul></ul>
               </ul>
-            </div>
-            <div className="col-lg-3 col-md-3">
-              <h6 className="mb-4">Download App</h6>
-              <div className="app">
-                <a href="#">
-                  <img src="img/google.png" alt="" />
-                </a>
-                <a href="#">
-                  <img src="img/apple.png" alt="" />
-                </a>
-              </div>
-              <h6 className="mb-3 mt-4">GET IN TOUCH</h6>
-              <div className="footer-social">
-                <a
-                  className="btn-facebook mx-1"
-                  href={settings.facebookUrl}
-                  target="_blank"
-                >
+              </div> 
+            {/* <div className="col-lg-3 col-md-3">
+            <h6 className="mb-4">GADGET HUB</h6>
+              <ul className="footer-list">
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">contact us</a>
+                </li>
+                <li>
+                  <a href="#">Customer service</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <ul></ul>
+              </ul>
+              </div> */}
+              <div className="col-lg-3 col-md-3">
+              <h6 className="text-white">CONTACT US</h6>
+              <ul className="footer-list">
+          
+                <li>
+                  <a href="#"> {settings.phone} </a>
+                  </li>
+                <li>
+                  <a href="#"> {settings.email} </a>
+                </li>
+                <li>
+                  <a href="#"> {settings.address} </a>
+                </li>
+                </ul>
+               </div>
+              <ul className="col-lg-4 col-md-4">
+              <ul className="footer-social">
+
+             <a className="btn-twitter mx-1"style={{ backgroundColor:'#d3d1db', color: 'blue' }}
+                  href={settings.twitterUrl}
+                  target="_blank"  >
                   <i className="mdi mdi-facebook" />
                 </a>
 
                 <a
-                  className="btn-twitter mx-1"
+                className="btn-twitter mx-1 "style={{ backgroundColor:'#d3d1db', color: '#174ae4' }}
                   href={settings.twitterUrl}
                   target="_blank"
-                >
+               >
+                
                   <i className="mdi mdi-twitter" />
                 </a>
                 <a
-                  className="btn-linkedin mx-1"
+                  className="btn-linkedin mx-1" style={{ backgroundColor:'#0a66c2', color: 'white' }}
                   href={settings.linkedinUrl}
                   target="_blank"
                 >
                   <i className="mdi mdi-linkedin" />
                 </a>
                 <a
-                  className="btn-instagram mx-1"
+                  className="btn-instagram mx-1" style={{ backgroundColor: '#e6e6e6', color: '#F56040' }}
                   href={settings.instagramUrl}
                   target="_blank"
                 >
                   <i className="mdi mdi-instagram" />
                 </a>
+                </ul>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
+              </div>
       </section>
       {/* End Footer */}
       {/* Copyright */}
-      <section className="pt-4 pb-4 footer-bottom">
+      <section className="footer-bottom footer " style={{ backgroundColor:'#2C2D30', color: '#25a278' }}>
         <div className="container">
           <div className="row no-gutters">
             <div className="col-lg-6 col-sm-6">
@@ -196,8 +211,8 @@ function Footer() {
                 <small className="mt-0 mb-0">
                   Made with <i className="mdi mdi-heart text-danger" />
                   by{" "}
-                  <a href="https://github.com/a5hi5hx" target="_blank">
-                    Ashish Paudel
+                  <a href="https://github.com/Kalebaun18" target="_blank">
+                    BrandBuilder
                   </a>
                 </small>
               </p>

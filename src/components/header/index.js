@@ -41,9 +41,9 @@ const Navigation = () => {
       <header className="header clearfix">
         <nav className="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/" style={{ color: "#fff" }}>
-             Gadgethub Pokhara
-            </a>
+             <a className="navbar-brand" href="/" style={{ color: "#fff", fontFamily:"Oswald" }}>
+             Gadget Hub Pokhara
+            </a> 
             <button
               className="navbar-toggler navbar-toggler-white"
               type="button"
@@ -53,7 +53,7 @@ const Navigation = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon" />
+              <span className="navbar-toggler-icon"/>
             </button>
             <div className="navbar-collapse" id="navbarNavDropdown">
               <div className="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto top-categories-search-main">
@@ -64,8 +64,8 @@ const Navigation = () => {
                   <div className="input-group">
                     <input
                       className="form-control"
-                      placeholder="Search products in Your City"
-                      aria-label="Search products in Your City"
+                      placeholder="Search in GadgetHubPokhara"
+                      aria-label="Search in GadgetHubPokhara"
                       type="text"
                       name="searchtxt"
                       //   value={searchtxt}
@@ -79,16 +79,19 @@ const Navigation = () => {
                       >
                         <i className="mdi mdi-file-find" /> Search
                       </button>
+                      
                     </span>
                   </div>
                 </div>
               </div>
               <div className="my-2 my-lg-0">
                 <ul className="list-inline main-nav-right">
-                  <li className="list-inline-item">
+                  <ul className="list-inline-item">
+                  
                     {checkAuth() ? (
                       <>
-                        <div className="dropdown">
+
+<div className="dropdown">
                           <button
                             className="btn btn-account dropdown-toggle"
                             type="button"
@@ -166,10 +169,20 @@ const Navigation = () => {
                         </a>
                       </>
                     )}
-                  </li>
+              </ul>
+                  
+               <button className="wishlist-button" style={{ backgroundColor: 'transparent',  padding: 0 }}>
+              <img src="https://th.bing.com/th/id/R.8b0ff98943becaa7ea79c2963289f8fe?rik=%2b92opnGxBEwJEg&riu=http%3a%2f%2fwww.downloadclipart.net%2flarge%2f5630-rainbow-heart-design.png&ehk=zE0dqhBFJ4Ys%2fWPVnMORBBtALMW8qLa1DDf2Dx1e4R0%3d&risl=&pid=ImgRaw&r=0"
+               alt="Wishlist" style={{ width: '30px', height: '30px', fill: 'red' }} />
+               </button>
+               
+
+              
                   <li className="list-inline-item cart-btn">
                     <CartSideBar />
                   </li>
+                  
+
                 </ul>
               </div>
             </div>

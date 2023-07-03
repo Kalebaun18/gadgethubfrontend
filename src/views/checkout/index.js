@@ -79,7 +79,7 @@ function Checkout() {
 
       let data = {
         customerId: customer._id,
-        paymentMethod: "stripe",
+        paymentMethod: "Esewa",
         orderId: orderId,
         shippingAddress: shippingAddress,
         orderPrice: subTotal,
@@ -214,8 +214,8 @@ function Checkout() {
                                     </div>
                                   </li>
                                   <StripeCheckout
-                                    name="Kosheli Express"
-                                    image="https://firebasestorage.googleapis.com/v0/b/mern-ecommerce-5b054.appspot.com/o/cart.png?alt=media&token=ccfcfabc-f6c5-41ba-9991-b0a2911ec44a"
+                                    name="GagdetHubPokhara"
+                                    image="https://cdn.esewa.com.np/ui/images/esewa_og.png?111"
                                     billingAddress
                                     shippingAddress
                                     description={`Your total is ${priceFormat(
@@ -229,7 +229,7 @@ function Checkout() {
                                     <li>
                                       <div className="radio-item_1">
                                         <input
-                                          value="stripe"
+                                          value="Esewa"
                                           name="paymentMethod"
                                           type="radio"
                                         />
@@ -237,7 +237,7 @@ function Checkout() {
                                           htmlFor="card1"
                                           className="radio-label_1"
                                         >
-                                          Stripe
+                                          Esewa
                                         </label>
                                       </div>
                                     </li>
