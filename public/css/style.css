@@ -266,10 +266,10 @@ a:focus {
     /* line-height: 22px; */
 }
 .border-top {
-    border-top: 1px solid #eeeeee !important;
+    border-top: 10px solid #eeeeee
 }
 .border-bottom {
-    border-bottom: 1px solid #eeeeee !important;
+    border-bottom: 10px solid #eeeeee !important;
 }
 .dropdown-item.active, .dropdown-item:active {
     background-color:#f9f9f9 !important;
@@ -752,35 +752,44 @@ a:focus {
 /* Footer */
 /*checkout*/
 .total-checkout-group {
-    padding: 20px 20px 0;
-    border-top: 1px solid #efefef;
+    padding: 10px 10px 0;
+    border-top: 1px solid #1a1818;
     margin-top: 10px;
+    line-height: 23px;
 }
 /*end checkout*/
 .footer {
-    border-bottom: 1px solid #eeeeee;
-    border-top: 1px solid #eeeeee !important;
+    background-color: #8f7979;
+    border-top: 14px solid #2C2D30;
+    line-height: 20px;
+    padding:0px;
+    height:max-content ;
 }
 .footer .footer-list li a{
     color:hsl(0deg 0% 53%);
     font-size: 12px;
+    line-height: 4px;
+    height: 90px;
+
 }
 .app img {
-    height: 32px;
+    height:fit-content;
     margin: 0 11px 0 0;
 }
 .footer-bottom p{
-	line-height: 16px;
+    height: 15px;
+    display: flow-root;
+	line-height: 0px;
 }
 .footer-social a {
-    background: #ccc none repeat scroll 0 0;
-    border-radius: 25px;
+    background: #1e1919 none repeat scroll 0 0;
+    border-radius: 16px;
     color: #fff;
-    display: inline-block;
-    height: 27px;
+    display:inline-table;
+    height:fit-content;
     line-height: 26px;
     text-align: center;
-    width: 27px;
+    width: 30px;
 }
 /* Cart Sidebar */
 body.toggled {
@@ -1675,7 +1684,7 @@ label {
 		margin-bottom: 4px;
 	}
 	.footer-social a {
-		margin-bottom: 3px;
+		margin-bottom: 4px;
 	}
 	.top-categories-search .form-control {
 		min-width: auto;

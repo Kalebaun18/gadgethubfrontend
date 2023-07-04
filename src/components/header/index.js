@@ -41,9 +41,12 @@ const Navigation = () => {
       <header className="header clearfix">
         <nav className="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
           <div className="container-fluid">
-             <a className="navbar-brand" href="/" style={{ color: "#fff", fontFamily:"Oswald" }}>
+             {/* <a className="navbar-brand" href="/" style={{ color: "#fff", fontFamily:"Oswald" }}>
              Gadget Hub Pokhara
-            </a> 
+            </a>  */}
+            <a className="navbar-brand" href="/" style={{ color: "#fff", fontFamily:"Oswald" }}>
+             <img src="/img/gad.PNG" alt="Gadget Hub Pokhara" style={{ width: "60px", height: "50px" }} />
+           </a>
             <button
               className="navbar-toggler navbar-toggler-white"
               type="button"
@@ -77,7 +80,7 @@ const Navigation = () => {
                         type="submit"
                         // onClick={this.handleClickSearch}
                       >
-                        <i className="mdi mdi-file-find" /> Search
+                        <i className="mdi mdi-file-find" style={{ height: "90px" }}/> Search
                       </button>
                       
                     </span>
@@ -174,9 +177,10 @@ const Navigation = () => {
                <button className="wishlist-button" style={{ backgroundColor: 'transparent',  padding: 0 }}>
               <img src="https://th.bing.com/th/id/R.8b0ff98943becaa7ea79c2963289f8fe?rik=%2b92opnGxBEwJEg&riu=http%3a%2f%2fwww.downloadclipart.net%2flarge%2f5630-rainbow-heart-design.png&ehk=zE0dqhBFJ4Ys%2fWPVnMORBBtALMW8qLa1DDf2Dx1e4R0%3d&risl=&pid=ImgRaw&r=0"
                alt="Wishlist" style={{ width: '30px', height: '30px', fill: 'red' }} />
+              
                </button>
                
-
+              
               
                   <li className="list-inline-item cart-btn">
                     <CartSideBar />

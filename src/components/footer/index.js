@@ -25,10 +25,10 @@ function Footer() {
     };
     getSettings();
   }, []);
+
   return (
     <div>
-      {/* Footer */}
-      <section className="section-padding  border-top" style={{ backgroundColor:'#E2E2DC ',color: 'red' }}>
+      <section className="section-filled  border-top" style={{ backgroundColor:'#E2E2DC ',color: 'red' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-sm-6">
@@ -55,10 +55,11 @@ function Footer() {
           </div>
         </div>
       </section>
+      
 
       <section className="section-padding footer" style={{ backgroundColor:'#2C2D30', color: '#34e2b5' }}>
-        < div className="container">
-          <div className="row">
+        <div div className="container">
+          <div div className="row">
           <div className="col-lg-3 col-md-3">
               <h4 className="mb-5 mt-0">
                 <Link className="logo" to="/">
@@ -69,8 +70,6 @@ function Footer() {
                 </Link>
               </h4>
               </div>
-             
-            
             <div className="col-lg-2 col-md-2">
               <h6 className="text-white">INFORMATION </h6>
               <ul className="footer-list">
@@ -125,6 +124,7 @@ function Footer() {
                 <ul></ul>
               </ul>
               </div> 
+
             {/* <div className="col-lg-3 col-md-3">
             <h6 className="mb-4">GADGET HUB</h6>
               <ul className="footer-list">
@@ -146,6 +146,7 @@ function Footer() {
                 <ul></ul>
               </ul>
               </div> */}
+
               <div className="col-lg-3 col-md-3">
               <h6 className="text-white">CONTACT US</h6>
               <ul className="footer-list">
@@ -194,35 +195,37 @@ function Footer() {
                 </a>
                 </ul>
                 </ul>
-              </div>
-              </div>
-      </section>
+             </div>
+             </div>
+            
+     
       {/* End Footer */}
       {/* Copyright */}
-      <section className="footer-bottom footer " style={{ backgroundColor:'#2C2D30', color: '#25a278' }}>
+      <section className="footer-bottom footer" style={{ backgroundColor: '#2C2D30', color: '#25a278' }}>
         <div className="container">
           <div className="row no-gutters">
             <div className="col-lg-6 col-sm-6">
-              <p className="mt-1 mb-0">
+              <p className="mt-1 mb-0" style={{ color : 'GrayText', fontFamily:'revert-layer'}}>
                 © Copyright {new Date().getFullYear()}
                 <strong className="text-dark"></strong>
-                . All Rights Reserved
-                <br />
+                . All Rights Reserved  :  
                 <small className="mt-0 mb-0">
-                  Made with <i className="mdi mdi-heart text-danger" />
-                  by{" "}
-                  <a href="https://github.com/Kalebaun18" target="_blank">
-                    BrandBuilder
-                  </a>
+                   {" "} 
+                  <a href="https://github.com/Kalebaun18" target="_blank" style={{ color: 'darkkhaki', fontFamily: 'sans-serif' }}>
+                     GadgetHubPokhara
+                   </a>  
                 </small>
               </p>
-            </div>
+              </div>
           </div>
         </div>
       </section>
-      {/* End Copyright */}
-    </div>
-  );
-}
 
+{/* End Copyright */}
+              </section>
+              </div>
+             
+       );
+    
+}
 export default Footer;
